@@ -1,105 +1,96 @@
-باشه، این نسخه‌ی README حرفه‌ای‌تره. اینو به عنوان `README.md` جایگزین کن:
-
-```markdown
 # 🗡️ ROGUE DELUXE
 
 ## A C11 Terminal Dungeon Adventure
 
-<p align="center">
-
-A procedural roguelike experience built with **C11** and **ncurses**.
-
-Explore unknown dungeons, fight deadly creatures, collect ancient treasures,  
-and survive long enough to reach the final floor.
-
-</p>
+> Enter the forgotten depths.  
+> Fight deadly creatures.  
+> Collect ancient artifacts.  
+> Escape alive.
 
 ---
 
 ## 🌌 Game Overview
 
-You are an explorer trapped inside a mysterious underground world.
+**Rogue Deluxe** is a terminal-based roguelike adventure game developed in **C11** using the **ncurses** library.
 
-Every dungeon is different.
+The player explores randomly generated dungeons, fights enemies, collects valuable items, manages resources, and attempts to survive through multiple dangerous floors.
 
+Every dungeon is different.  
 Every decision matters.
-
-Fight monsters, manage your resources, discover powerful weapons, and descend deeper into the unknown.
-
-Only the strongest adventurers reach the exit.
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-## 🏰 Procedural Dungeon Generation
+### 🏰 Procedural Dungeon Generation
 
 - Randomly generated dungeon floors
 - Dynamic rooms and corridors
-- Doors, traps, treasures and hidden paths
+- Doors, traps, treasures, and hidden paths
 - Fog of war and visibility system
+- Multi-floor exploration
 
 ---
 
-## ⚔️ Combat System
+### ⚔️ Combat System
 
-Turn-based combat with:
+A turn-based combat system including:
 
-- Multiple weapons
-- Melee and ranged attacks
+- Melee combat
+- Ranged attacks
 - Enemy encounters
 - Damage calculation
-- Experience and leveling system
+- Experience and score system
 
-Available weapons:
+#### Available Weapons
 
-| Weapon | Type |
+| Weapon | Description |
 |---|---|
-| Mace | Heavy damage |
-| Dagger | Fast attacks |
-| Sword | Balanced |
-| Bow | Ranged |
-| Wand | Magic |
+| Mace | Heavy damage weapon |
+| Dagger | Fast attack weapon |
+| Sword | Balanced weapon |
+| Bow | Long-range attacks |
+| Wand | Magical attacks |
 
 ---
 
-## 👹 Enemies
+### 👹 Enemies
 
-Encounter different creatures:
+Explore the dungeon and encounter different creatures:
 
 | Enemy | Description |
-|-|-|
-| 🐍 Snake | Fast and dangerous |
+|---|---|
+| 🐍 Snake | Fast and dangerous enemy |
 | ☠️ Undead | Dark dungeon creature |
-| 🔥 Fire Beast | High damage enemy |
-| 👹 Demon | Powerful magical enemy |
+| 🔥 Fire Beast | Powerful elemental enemy |
+| 👹 Demon | Magical and deadly creature |
 | 🗿 Giant | Slow but extremely strong |
 
 ---
 
-## 🎒 Items & Resources
+### 🎒 Items & Resources
 
 Collect and manage:
 
 - 💰 Gold
 - 🍖 Food
-- 🧪 Potions
-- ✨ Magic runes
+- 🧪 Health potions
+- ✨ Magic rune scrolls
 - 🏹 Arrows
 - ⚔️ Weapons
 
-Your survival depends on smart resource management.
+Resource management is essential for survival.
 
 ---
 
-# 🎮 Controls
+## 🎮 Controls
 
 | Key | Action |
-|-|-|
-| Arrow Keys / HJKL | Move |
+|---|---|
+| Arrow Keys / H J K L | Move player |
 | E | Eat food |
 | P | Drink potion |
-| Z | Use rune |
+| Z | Use magic rune |
 | W | Change weapon |
 | F | Fire ranged weapon |
 | I | Open inventory |
@@ -109,85 +100,84 @@ Your survival depends on smart resource management.
 
 ---
 
-# 🖥️ Interface
+## 🖥️ User Interface
 
-Built with:
+The game uses **ncurses** to provide:
 
-- ncurses color rendering
-- Dynamic HUD
-- Combat messages
+- Color-based terminal graphics
+- Game HUD
 - Inventory screen
 - Settings menu
+- Help screen
 - Scoreboard system
+- Combat message log
 
 ---
 
-# 🛠️ Technology Stack
+## 🛠️ Technology Stack
 
 | Technology | Usage |
-|-|-|
+|---|---|
 | C11 | Main programming language |
-| ncurses | Terminal graphics |
+| ncurses | Terminal graphics and UI |
 | Makefile | Build system |
 | Git | Version control |
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```
-
 Rogue-Game/
-
+│
 ├── source/
-│
-├── include/
-│   └── rogue.h
-│
-├── src/
-│   ├── main.c
-│   ├── world.c
-│   ├── ui.c
-│   └── persistence.c
+│   │
+│   ├── include/
+│   │   └── rogue.h
+│   │
+│   ├── src/
+│   │   ├── main.c
+│   │   ├── world.c
+│   │   ├── ui.c
+│   │   └── persistence.c
+│   │
+│   └── Makefile
 │
 ├── docs/
 │
 └── README.md
-
-````
+```
 
 ---
 
-# 🚀 Installation
+## 🚀 Installation
 
-## Requirements
+### Requirements
 
-- macOS / Linux
+- macOS or Linux
 - C compiler
 - ncurses library
 
-
-Install ncurses on macOS:
+### Install ncurses (macOS)
 
 ```bash
 brew install ncurses
-````
+```
 
-Clone the repository:
+### Clone Repository
 
 ```bash
 git clone git@github.com:NazilaAbedi/Rogue-Game.git
 ```
 
-Build:
+### Build
 
 ```bash
 cd Rogue-Game/source
-
 make
 ```
 
-Run:
+### Run
 
 ```bash
 ./rogue
@@ -195,72 +185,72 @@ Run:
 
 ---
 
-# 🧠 Architecture
+## 🧠 Architecture
 
-## main.c
-
-Responsible for:
-
-* Program flow
-* Main menu
-* Game loop
-* User interaction
-
-## world.c
+### main.c
 
 Responsible for:
 
-* Dungeon generation
-* Player movement
-* Combat
-* Enemy behavior
-* Game mechanics
+- Application flow
+- Main menu
+- Game loop
+- User interaction
 
-## ui.c
-
-Responsible for:
-
-* ncurses rendering
-* Colors
-* Menus
-* HUD
-* Screens
-
-## persistence.c
+### world.c
 
 Responsible for:
 
-* User accounts
-* Save/load system
-* Player statistics
+- Dungeon generation
+- Player movement
+- Combat system
+- Enemy behavior
+- Game mechanics
+
+### ui.c
+
+Responsible for:
+
+- ncurses rendering
+- Colors
+- Menus
+- HUD
+- Screens
+
+### persistence.c
+
+Responsible for:
+
+- User management
+- Save/load system
+- Player statistics
 
 ---
 
-# 💾 Save System
+## 💾 Save System
 
-The game supports:
+Rogue Deluxe includes:
 
-* User profiles
-* Password validation
-* Save files
-* Score tracking
-* Hall of Legends
-
----
-
-# 🏆 Objective
-
-Reach the final dungeon floor.
-
-Defeat enemies.
-
-Collect treasures.
-
-Escape alive.
+- User profiles
+- Password validation
+- Save and load functionality
+- Score tracking
+- Hall of Legends leaderboard
 
 ---
 
-# 👩‍💻 Developer
+## 🏆 Objective
+
+Your mission:
+
+1. Explore the dungeon
+2. Defeat enemies
+3. Collect treasures
+4. Reach the final floor
+5. Escape alive
+
+---
+
+## 👩‍💻 Developer
 
 **Nazila Abedi**
 
@@ -268,3 +258,6 @@ Programming Fundamentals Project
 
 ---
 
+## 📜 License
+
+This project was created as an educational project for a Programming Fundamentals course.
